@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chỉ số khối cơ thể</title>
+</head>
+<body>
+<script>
+    var a = prompt("nhập chiều cao(m):");
+    var b = prompt("nhập cân nặng(kg):");
+    var c = eval(b)/(eval(a)*2);
+    if (c < 18)
+        document.write("chỉ số bmi: ", c, " gầy");
+    else if (c < 25.0)
+        document.write("chỉ số bmi: ", c, " bình thường");
+    else if (c < 30.0)
+        document.write("chỉ số bmi: ", c, " thừa cân");
+    else
+        document.write("chỉ số bmi: ", c, " béo phì");
+</script>
+</body>
+</html>
